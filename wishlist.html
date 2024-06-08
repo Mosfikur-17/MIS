@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wishlist</title>
+    <style>
+        body {
+            background-color: rgb(57, 51, 51);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "UNIQUE FOOTPRINT";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .wishlist-container {
+            padding-left: 10%;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .wishlist-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+
+        .wishlist-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        } 
+
+        .item-details {
+            color: rgb(236, 218, 218);
+            flex-grow: 1;
+        }       
+
+        .item-details h2 {
+            margin: 0;
+            color: rgb(122, 122, 74);
+        }
+
+        .item-details p {
+            color: rgb(212, 199, 199);
+            margin: 5px 0;
+        }   
+
+        .remove-btn {
+            background-color: #632329;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .remove-btn:hover {
+            background-color: #7d2b36;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wishlist-container">
+        <h1>My Wishlist</h1>
+        <div class="wishlist-item">
+            <img src="images/1/s4.jpg">
+            <div class="item-details">
+                <h2>Casual Sandals</h2>
+                <p>1000 BDT</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="wishlist-item">
+            <img src="images/1/s5.jpg">
+            <div class="item-details">
+                <h2>Casual Shoes</h2>
+                <p>1200 BDT</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="wishlist-item">
+            <img src="images/1/s6.jpg">
+            <div class="item-details">
+                <h2>Casual Sneakers</h2>
+                <p>800 BDT</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

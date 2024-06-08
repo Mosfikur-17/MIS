@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNIQUE FOOTPRINTS</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .shoe {
+            width: 1300px;
+            margin-top: 15px;
+        }
+        .headline {
+            position: relative;
+            font-size: x-small;
+            text-align: end;
+            top: 50px;        
+        }
+        .centered {
+            padding-top: 3%;
+            padding-left: 10%;
+            position: absolute;
+            top: 3%;
+            left: 25%;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-top: 20px;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            padding: 0 20px;
+        }
+        li a {
+            color: bisque;
+            text-decoration: wavy;
+            font-size: 10px;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            padding: 5px;
+            font-size: 13px;
+        }
+        .button {
+            background-color: rgb(39, 39, 45);
+            color: white;
+            border: wheat;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 12px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            box-decoration-break: slice;
+        }
+        .container {
+            position: relative;
+        }
+        .photo-title {
+            padding-right: 10%;
+            color: brown;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        .logo {
+            width: 100px; /* Adjust size as needed */
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .featured-products {
+            padding-bottom: 10%;
+            padding-top: 50px;
+            text-align: center;
+        }
+        .featured-products .container {
+            font-size: larger;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .featured-products .products-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        .featured-products .product {
+            background-color: rgb(15, 16, 17);
+            border: 1px solid rgb(148, 151, 7);
+            border-radius: 6%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .featured-products .product img {
+            max-width: 100%;
+            border-radius: 10%;
+            border-color: brown;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer.container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="links"> 
+        <ul>
+            <li><img src="images/mainlogo.png" alt="Logo" class="logo"></li>
+            <li><a href="uniquefoot.html">SHOP</a></li>
+            <li><a href="wishlist.html">WISHLIST</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="myaccount.html">MY ACCOUNT</a></li>
+            <li><a href="menu.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <input class="search-bar" type="text" placeholder="search">
+
+    <div class="headline">
+        <div class="photo-title">UNIQUE FOOTPRINTS</div>
+        <img class="shoe3" src="images/men3.png" alt="shoes">
+        <div class="centered">
+            <h1>Discover a well chosen collection of shoes that blend fashion and comfort.</h1>
+            <p>Where quality meets style, one step at a time.</p>
+            <button class="button">Shop Now</button>
+        </div>
+    </div>
+
+    <section class="featured-products">
+        <div class="container">
+            <h1 class="header">Featured Products</h1>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="images/1/sne 1.jpg">
+                    <h2>Sneakers</h2>
+                    <p>2000 BDT</p>
+                </div>
+                <div class="product">
+                    <img src="images/1/sne2.jpg">
+                    <h2>Casual Sneakers</h2>
+                    <p>2200 BDT</p>
+                </div>
+                <div class="product">
+                    <img src="images/1/s4.jpg">
+                    <h2>Casual Sandals</h2>
+                    <p>1200 BDT</p>
+                </div>
+                <div class="product">
+                    <img src="images/1/s3.jpg">
+                    <h2>Casual Shoes</h2>
+                    <p>3000 BDT</p>
+                </div> 
+            </div>     
+        </div>
+    </section>       
+
+    <footer>
+        <div class="container">
+            <p>2024 Shoe Store. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
